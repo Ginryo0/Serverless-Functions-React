@@ -23,7 +23,6 @@ const Basic = () => {
       </div>
       <div className="products">
         {products.map((prod) => {
-          console.log(prod);
           const {
             id,
             image: { url },
