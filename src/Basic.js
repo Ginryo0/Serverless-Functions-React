@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 const url = 'https://serverless-fncs-gryo.netlify.app/api/2-basic-api';
 
@@ -8,7 +8,9 @@ const Basic = () => {
     try {
       const { data } = await axios(url);
       setProducts(data);
-    } catch (error) {}
+    } catch (error) {
+      console.log('Server Issue');
+    }
   };
 
   useEffect(() => {
