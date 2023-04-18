@@ -1,5 +1,6 @@
+import Basic from './Basic';
 function App() {
-  return <h2>React and Serverless Functions</h2>
+  return <Basic />;
 }
 
-export default App
+export default App;
